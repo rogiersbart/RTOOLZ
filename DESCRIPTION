@@ -1,0 +1,11 @@
+Package: RTOOLZ
+Type: Package
+Title: A collection of useful functions.
+Version: 0.1.0
+Date: 2014-12-18
+Author: Bart Rogiers <brogiers@sckcen.be>
+Maintainer: Bart Rogiers <brogiers@sckcen.be>
+Description: The RTOOLZ package provides different useful functions for
+    performing a variety of tasks, not available in base R.
+License: GPL (>= 2)
+URL: https://github.com/rogiersbart/RTOOLZ
