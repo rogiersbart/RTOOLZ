@@ -3,7 +3,7 @@
 \alias{geomean}
 \title{Calculate a geometric mean}
 \usage{
-geomean(x)
+geomean(x, ...)
 }
 \arguments{
 \item{x}{An R object.}
