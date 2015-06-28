@@ -6,6 +6,16 @@
 addlonglat(dat, CRS_from = CRS("+init=epsg:31370"),
   CRS_to = CRS("+proj=longlat +datum=WGS84"))
 }
+\arguments{
+\item{dat}{data frame with x and y coordinates}
+
+\item{CRS_from}{original CRS; defaults to '+init=epsg:31370'}
+
+\item{CRS_to}{target CRS; defaults to '+proj=longlat +datum=WGS84'}
+}
+\value{
+data frame with additional long and lat columns
+}
 \description{
 Add long lat coordinates to a data frame
 }

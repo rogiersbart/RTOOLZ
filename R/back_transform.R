@@ -1,5 +1,8 @@
 #' Back transformation based on data attributes
 #' 
+#' For use with \code{\link{normal_transform}}
+#' @param dat vector of values in transformed space, with transform attributes
+#' @param newdat vector of values in transformed space, to be backtransformed with dat attributes
 #' @export
 back_transform <- function(dat,newdat=NULL)
 {

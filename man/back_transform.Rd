@@ -5,7 +5,12 @@
 \usage{
 back_transform(dat, newdat = NULL)
 }
+\arguments{
+\item{dat}{vector of values in transformed space, with transform attributes}
+
+\item{newdat}{vector of values in transformed space, to be backtransformed with dat attributes}
+}
 \description{
-Back transformation based on data attributes
+For use with \code{\link{normal_transform}}
 }
 

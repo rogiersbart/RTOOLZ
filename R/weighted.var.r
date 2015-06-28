@@ -1,16 +1,11 @@
+#' Weighted variance
+#' 
+#' @param x an object containing the values whose weighted variance is to be computed
+#' @param w a numerical vector of weights the same length as x giving the weights to use for elements of x
+#' @param na.rm a logical value indicating whether NA values in x should be stripped before the computation proceeds
+#' @return a length-one numeric vector
+#' @export
 weighted.var <- function(x, w, na.rm = FALSE) {
-  if (na.rm) {
-    w <- w[i <- !is.na(x)]
-    x <- x[i]
-  }
-  sum.w <- sum(w)
-  sum.w2 <- sum(w^2)
-  mean.w <- sum(x * w) / sum(w)
-  (sum.w / (sum.w^2 - sum.w2)) * sum(w * (x - mean.w)^2, na.rm =
-                                       na.rm)
-}
-
-weighted.var2 <- function(x, w, na.rm = FALSE) {
   if (na.rm) {
     w <- w[i <- !is.na(x)]
     x <- x[i]

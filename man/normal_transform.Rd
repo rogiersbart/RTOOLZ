@@ -5,6 +5,12 @@
 \usage{
 normal_transform(dat)
 }
+\arguments{
+\item{dat}{vector of values to be normal transformed}
+}
+\value{
+vector of transformed values, with attributes required for the backtransform
+}
 \description{
 Normal transform
 }
