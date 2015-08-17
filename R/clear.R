@@ -4,4 +4,4 @@
 #' @export
 clear <- function(name = .GlobalEnv) {
   rm(list = ls(name), envir = as.environment(name))
-} 
+}
