@@ -2,11 +2,41 @@
 % Please edit documentation in R/clipboard.R
 \name{clipboard}
 \alias{clipboard}
-\title{Clipboard}
+\alias{clipboard.NULL}
+\alias{clipboard.data.frame}
+\alias{clipboard.default}
+\alias{clipboard.matrix}
+\title{Copy/paste data from/to clipboard}
 \usage{
-clipboard(x = NULL, row.names = FALSE, col.names = TRUE, ...)
+clipboard(x = NULL, ...)
+
+\method{clipboard}{default}(x, ...)
+
+\method{clipboard}{NULL}(x, ...)
+
+\method{clipboard}{data.frame}(x, ...)
+
+\method{clipboard}{matrix}(x, ...)
+}
+\arguments{
+\item{x}{object to copy to clipboard; if not provided, the current clipboard contents will be returned}
 }
 \description{
-Clipboard
+Compatible with vectors, data frames (with header) and numeric matrices
+}
+\examples{
+clipboard(1:10)
+clipboard()
+clipboard(letters)
+clipboard()
+clipboard(rnorm(10)>0.5)
+which(clipboard())
+clipboard(cars)
+clipboard()
+clipboard(volcano)
+clipboard()
+}
+\seealso{
+\code{\link{utils::readClipboard}}, \code{\link{utils::writeClipboard}}
 }
 
