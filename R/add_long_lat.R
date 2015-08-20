@@ -12,9 +12,9 @@ add_long_lat <- function(dat, crs = NULL){
   }
   nrs <- which(!is.na(dat$x+dat$y))
   if (length(nrs) > 1) {
-    longlat <- spTransform(SpatialPoints((cbind(dat$x, dat$y)[nrs, ]), proj4string = crs), RTOOLZ::long_lat)
+    longlat <- sp::spTransform(sp::SpatialPoints((cbind(dat$x, dat$y)[nrs, ]), proj4string = crs), long_lat())
   } else {
-    longlat <- spTransform(SpatialPoints(data.frame(cbind(dat$x, dat$y))[nrs, ], proj4string = crs), RTOOLZ::long_lat)
+    longlat <- sp::spTransform(sp::SpatialPoints(data.frame(cbind(dat$x, dat$y))[nrs, ], proj4string = crs), long_lat())
   } 
   dat <- data.frame(dat, long = rep(NA, nrow(dat)), lat = rep(NA, nrow(dat)))
   if(length(nrs) == 1) {

@@ -10,4 +10,5 @@ Description: The RTOOLZ package provides different useful functions for
 License: GPL (>= 2)
 URL: https://github.com/rogiersbart/RTOOLZ
 Imports:
-  hydroGOF
+  hydroGOF,
+  sp

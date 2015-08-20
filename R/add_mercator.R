@@ -12,9 +12,9 @@ add_mercator <- function(dat, crs = NULL) {
   }
   nrs <- which(!is.na(dat$x+dat$y))
   if (length(nrs) > 1) {
-    merc <- spTransform(SpatialPoints((cbind(dat$x, dat$y)[nrs, ]), proj4string = crs), RTOOLZ::mercator)
+    merc <- sp::spTransform(sp::SpatialPoints((cbind(dat$x, dat$y)[nrs, ]), proj4string = crs), mercator())
   } else {
-    merc <- spTransform(SpatialPoints(data.frame(cbind(dat$x, dat$y))[nrs, ], proj4string = crs), RTOOLZ::mercator)
+    merc <- sp::spTransform(sp::SpatialPoints(data.frame(cbind(dat$x, dat$y))[nrs, ], proj4string = crs), mercator())
   } 
   dat <- data.frame(dat, x_merc = rep(NA, nrow(dat)), y_merc = rep(NA, nrow(dat)))
   if(length(nrs) == 1) {
