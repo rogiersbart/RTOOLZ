@@ -10,19 +10,5 @@ add_mercator <- function(dat, crs = NULL) {
     warning('No CRS specified. Using default.')
     crs <- getOption('default_crs')
   }
-  nrs <- which(!is.na(dat$x+dat$y))
-  if (length(nrs) > 1) {
-    merc <- sp::spTransform(sp::SpatialPoints((cbind(dat$x, dat$y)[nrs, ]), proj4string = crs), mercator())
-  } else {
-    merc <- sp::spTransform(sp::SpatialPoints(data.frame(cbind(dat$x, dat$y))[nrs, ], proj4string = crs), mercator())
-  } 
-  dat <- data.frame(dat, x_merc = rep(NA, nrow(dat)), y_merc = rep(NA, nrow(dat)))
-  if(length(nrs) == 1) {
-    dat$x_merc[nrs] <- merc$X1
-    dat$y_merc[nrs] <- merc$X2
-  } else {
-    dat$x_merc[nrs] <- merc$coords.x1
-    dat$y_merc[nrs] <- merc$coords.x2
-  }
-  return(dat)
+  return(convert_coordinates(dat,from=crs,to=mercator(),names_from=c('x','y'),names_to=c('x_merc','y_merc')))
 }

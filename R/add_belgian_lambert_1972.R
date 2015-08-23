@@ -9,19 +9,5 @@ add_belgian_lambert_1972 <- function(dat, crs = NULL) {
     warning('No CRS specified. Using default.')
     crs <- getOption('default_crs')
   }
-  nrs <- which(!is.na(dat$x+dat$y))
-  if (length(nrs) > 1) {
-    belg <- sp::spTransform(sp::SpatialPoints((cbind(dat$x, dat$y)[nrs, ]), proj4string = crs), belgian_lambert_1972())
-  } else {
-    belg <- sp::spTransform(sp::SpatialPoints(data.frame(cbind(dat$x, dat$y))[nrs, ], proj4string = crs), belgian_lambert_1972())
-  } 
-  dat <- data.frame(dat, x_belg = rep(NA, nrow(dat)), y_belg = rep(NA, nrow(dat)))
-  if(length(nrs) == 1) {
-    dat$x_belg[nrs] <- belg$X1
-    dat$y_belg[nrs] <- belg$X2
-  } else {
-    dat$x_belg[nrs] <- belg$coords.x1
-    dat$y_belg[nrs] <- belg$coords.x2
-  }
-  return(dat)
+  return(convert_coordinates(dat,from=crs,to=belgian_lambert_1972(),names_from=c('x','y'),names_to=c('x_belg','y_belg')))
 }

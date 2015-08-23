@@ -10,19 +10,5 @@ add_long_lat <- function(dat, crs = NULL){
     warning('No CRS specified. Using default.')
     crs <- getOption('default_crs')
   }
-  nrs <- which(!is.na(dat$x+dat$y))
-  if (length(nrs) > 1) {
-    longlat <- sp::spTransform(sp::SpatialPoints((cbind(dat$x, dat$y)[nrs, ]), proj4string = crs), long_lat())
-  } else {
-    longlat <- sp::spTransform(sp::SpatialPoints(data.frame(cbind(dat$x, dat$y))[nrs, ], proj4string = crs), long_lat())
-  } 
-  dat <- data.frame(dat, long = rep(NA, nrow(dat)), lat = rep(NA, nrow(dat)))
-  if(length(nrs) == 1) {
-    dat$long[nrs] <- longlat$X1
-    dat$lat[nrs] <- longlat$X2
-  } else {
-    dat$long[nrs] <- longlat$coords.x1
-    dat$lat[nrs] <- longlat$coords.x2
-  }
-  return(dat)
+  return(convert_coordinates(dat,from=crs,to=long_lat(),names_from=c('x','y'),names_to=c('long','lat')))
 }
