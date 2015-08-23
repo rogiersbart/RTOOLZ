@@ -25,13 +25,15 @@ convert_coordinates <- function(dat, from, to, names_from=c('x','y'), names_to=n
   if(names_from[1]==names_to[1]) {
     dat[,names_to[1]][nrs] <- converted_coords[,1]
   } else {
-    dat <- cbind(dat,converted_coords[,1])
+    dat$new <- NA
+    dat$new[nrs] <- converted_coords[,1]
     names(dat)[ncol(dat)] <- names_to[1]
   }
   if(names_from[2]==names_to[2]) {
     dat[,names_to[2]][nrs] <- converted_coords[,2]
   } else {
-    dat <- cbind(dat,converted_coords[,2])
+    dat$new <- NA
+    dat$new[nrs] <- converted_coords[,2]
     names(dat)[ncol(dat)] <- names_to[2]
   }  
   return(dat)
