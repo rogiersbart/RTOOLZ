@@ -1,14 +1,17 @@
-Package: RTOOLZ
+Package: rtoolz
 Type: Package
 Title: A collection of useful functions.
 Version: 0.3.0
 Date: 2015-06-28
 Author: Bart Rogiers <brogiers@sckcen.be>
 Maintainer: Bart Rogiers <brogiers@sckcen.be>
-Description: The RTOOLZ package provides different useful functions for
+Description: The rtoolz package provides different useful functions for
     performing a variety of tasks, not available in base R.
 License: GPL (>= 2)
-URL: https://github.com/rogiersbart/RTOOLZ
+URL: https://rogiersbart@bitbucket.org/rogiersbart/rtoolz.git
 Imports:
   hydroGOF,
   sp
+  gstat,
+  RandomFields,
+  parallel
