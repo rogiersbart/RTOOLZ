@@ -3,12 +3,14 @@ Type: Package
 Title: A collection of useful functions
 Version: 0.3.0.9999
 Date: 2015-06-28
+Authors@R: person("Bart", "Rogiers", role = c("aut", "cre"), email = "brogiers@sckcen.be")
 Author: Bart Rogiers <brogiers@sckcen.be>
 Maintainer: Bart Rogiers <brogiers@sckcen.be>
 Description: The rtoolz package provides different useful functions for
     performing a variety of tasks, not available in base R.
 License: GPL (>= 2)
 URL: https://github.com/rogiersbart/rtoolz
+BugReports: https://github.com/rogiersbart/rtoolz/issues
 Imports:
     hydroGOF,
     rgdal,
