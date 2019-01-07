@@ -17,5 +17,12 @@ Imports:
     sp,
     gstat,
     RandomFields,
-    parallel
+    parallel,
+    tibble,
+    fs,
+    glue,
+    magick,
+    purrr,
+    stringr,
+    dplyr
 RoxygenNote: 5.0.1
