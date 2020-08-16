@@ -24,5 +24,6 @@ Imports:
     magick,
     purrr,
     stringr,
-    dplyr
-RoxygenNote: 5.0.1
+    dplyr,
+    magrittr
+RoxygenNote: 6.1.1

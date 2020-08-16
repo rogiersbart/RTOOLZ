@@ -15,4 +15,3 @@ vector of transformed values, with attributes required for the backtransform
 \description{
 Normal transform
 }
-

@@ -9,4 +9,3 @@ erf(x)
 \description{
 Error function
 }
-

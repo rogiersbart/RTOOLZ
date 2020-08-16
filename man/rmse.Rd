@@ -9,4 +9,3 @@ rmse(sim, obs, ...)
 \description{
 See \code{hydroGOF::\link[hydroGOF]{rmse}} for more information.
 }
-

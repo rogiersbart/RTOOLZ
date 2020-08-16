@@ -1,4 +1,15 @@
-gimme <- function(path = getwd(), max_size = 1024) {
+#' Download Gimme photo albums at specified resolution
+#'
+#' @param path folder where you saved the album html page, and the individual
+#'             photos should be put instead, defaults to current working
+#'             directory
+#' @param max_size maximum number of pixels for image width and height, defaults
+#'                 to 4000
+#'        
+#' @export
+#' 
+#' @examples
+gimme <- function(path = getwd(), max_size = 4000) {
   
   # go to album, and save html
   
@@ -13,14 +24,15 @@ gimme <- function(path = getwd(), max_size = 1024) {
                          glue::glue("{max_size}x0"),
                          glue::glue("0x{max_size}")),
            url = glue::glue("https://img.gimme.eu/unsafe/{size}/",
-                      "s3-eu-central-1.amazonaws.com/uploads.gimme.eu/",
+                      "storage.googleapis.com/gimme-production-uploads/",
                       "{name}"))
   
   purrr::walk2(df$url, df$name, ~ magick::image_read(.x) %>%
-          magick::image_write(.y))
+          magick::image_write(glue::glue("{path}/", .y)))
   
-  unlink(glue::glue("{path}/Gimme_files"), recursive = TRUE)
-  unlink(glue::glue("{path}/Gimme.html"))
+  fs::file_chmod(glue::glue("{path}/Gimme_files"), "rw-")
+  fs::file_delete(glue::glue("{path}/Gimme_files"))
+  fs::file_delete(glue::glue("{path}/Gimme.html"))
   
   # alternative, login with rvest::html_session and rvest::html_form
   # get image urls from online album html

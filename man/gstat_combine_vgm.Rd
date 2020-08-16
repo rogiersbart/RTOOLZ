@@ -17,4 +17,3 @@ an anisotropic gstat variogram model
 \description{
 Combine separately modelled isotropic horizontal and vertical variograms into a single anisotropic variogram
 }
-

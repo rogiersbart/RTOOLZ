@@ -9,4 +9,3 @@ mirror.matrix(mat, mirror.type = "both")
 \description{
 mirror a matrix
 }
-

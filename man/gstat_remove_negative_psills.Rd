@@ -15,4 +15,3 @@ variogram model without negative partial sills
 \description{
 Remove negative partial sills from a gstat variogram model
 }
-

@@ -15,4 +15,3 @@ Output of \code{strsplit}, without empty elements.
 \description{
 Split the Elements of a Character Vector, and remove empty elements.
 }
-

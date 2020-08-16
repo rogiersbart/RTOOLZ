@@ -17,4 +17,3 @@ data frame with additional x_belg and y_belg columns
 \description{
 Add Belgian Lambert 1972 coordinates to a data frame
 }
-

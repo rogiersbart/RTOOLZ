@@ -9,4 +9,3 @@ belgian_lambert_2008()
 \description{
 Belgian Lambert 2008 coordinate reference system
 }
-

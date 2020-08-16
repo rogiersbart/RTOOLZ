@@ -15,4 +15,3 @@ The string, without the commented part.
 \description{
 Remove comments at the end of a string
 }
-

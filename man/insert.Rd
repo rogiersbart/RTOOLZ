@@ -9,4 +9,3 @@ insert(original_string, insert_string, index = 0)
 \description{
 Insert
 }
-

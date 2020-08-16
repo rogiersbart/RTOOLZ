@@ -19,4 +19,3 @@ a matrix with the predicted values
 \description{
 Krige a 2d field with gstat
 }
-

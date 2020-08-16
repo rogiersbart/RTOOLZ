@@ -17,4 +17,3 @@ an isotropic gstat variogram model
 \description{
 Model a 2d variogram with gstat
 }
-

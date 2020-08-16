@@ -2,9 +2,9 @@
 % Please edit documentation in R/clipboard.R
 \name{clipboard}
 \alias{clipboard}
+\alias{clipboard.default}
 \alias{clipboard.NULL}
 \alias{clipboard.data.frame}
-\alias{clipboard.default}
 \alias{clipboard.matrix}
 \title{Copy/paste data from/to clipboard}
 \usage{
@@ -39,4 +39,3 @@ clipboard()
 \seealso{
 \code{\link{utils::readClipboard}}, \code{\link{utils::writeClipboard}}
 }
-

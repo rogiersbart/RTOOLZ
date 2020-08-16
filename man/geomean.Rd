@@ -17,4 +17,3 @@ Calculate a geometric mean
 \seealso{
 \code{\link{harmean}} and \code{\link{mean}}
 }
-

@@ -9,4 +9,3 @@ rev_rainbow(...)
 \description{
 Reversed rainbow color palette
 }
-

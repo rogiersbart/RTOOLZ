@@ -17,4 +17,3 @@ Calculate a weighted harmonic mean
 \seealso{
 \code{\link{weighted.geomean}}, \code{\link{weighted.mean}}, \code{\link{harmean}} \code{\link{geomean}} and \code{\link{mean}}
 }
-

@@ -9,4 +9,3 @@ belgian_lambert_1972()
 \description{
 Belgian Lambert 1972 coordinate reference system
 }
-

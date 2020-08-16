@@ -9,4 +9,3 @@ nse(sim, obs, ...)
 \description{
 See \code{hydroGOF::\link[hydroGOF]{NSE}} for more information.
 }
-

@@ -19,4 +19,3 @@ None
 \description{
 Write a GSLIB file
 }
-

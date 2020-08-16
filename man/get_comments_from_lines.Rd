@@ -15,4 +15,3 @@ Vector of strings with the commented lines.
 \description{
 Get comments at the beginning of a vector of strings
 }
-

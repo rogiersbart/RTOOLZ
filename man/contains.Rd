@@ -16,4 +16,3 @@ contains(file, pattern)
 \description{
 Check if file contains the provided pattern
 }
-

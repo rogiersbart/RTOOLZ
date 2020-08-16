@@ -9,4 +9,3 @@ erfc(x)
 \description{
 Complementary error function
 }
-

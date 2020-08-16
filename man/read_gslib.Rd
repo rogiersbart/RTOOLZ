@@ -17,4 +17,3 @@ data frame
 \description{
 Read a GSLIB file
 }
-

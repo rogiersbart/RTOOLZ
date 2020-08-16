@@ -9,4 +9,3 @@ ggplot_colours(n = 6, h = c(0, 360) + 15)
 \description{
 Get ggplot default colours
 }
-

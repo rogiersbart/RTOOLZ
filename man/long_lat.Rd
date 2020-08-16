@@ -9,4 +9,3 @@ long_lat()
 \description{
 Commonly used by organizations that provide GIS data for the entire globe or many countries. CRS used by Google Earth.
 }
-

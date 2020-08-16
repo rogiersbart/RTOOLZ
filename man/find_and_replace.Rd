@@ -16,4 +16,3 @@ find_and_replace(file, find, replace, fixed = TRUE, ...)
 \description{
 Find and replace text string in files
 }
-

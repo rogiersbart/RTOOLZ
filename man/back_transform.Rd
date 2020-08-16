@@ -14,4 +14,3 @@ back_transform(dat, newdat = NULL)
 \description{
 For use with \code{\link{normal_transform}}
 }
-

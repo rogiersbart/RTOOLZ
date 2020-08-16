@@ -17,4 +17,3 @@ Formatted character object.
 \description{
 Format a character object with specified width, analogues to the \code{base} package \code{prettyNum} function.
 }
-

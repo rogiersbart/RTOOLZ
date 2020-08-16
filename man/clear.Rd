@@ -12,4 +12,3 @@ clear(name = .GlobalEnv)
 \description{
 Remove all objects from an environment
 }
-

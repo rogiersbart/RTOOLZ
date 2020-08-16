@@ -17,4 +17,3 @@ Calculate a harmonic mean
 \seealso{
 \code{\link{geomean}} and \code{\link{mean}}
 }
-

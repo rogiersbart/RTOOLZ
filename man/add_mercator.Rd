@@ -17,4 +17,3 @@ data frame with additional x_merc and y_merc columns
 \description{
 Add mercator coordinates to a data frame
 }
-

@@ -15,4 +15,3 @@ Vector of strings without the commented lines.
 \description{
 Remove comments at the beginning of a vector of strings
 }
-

@@ -15,4 +15,3 @@ gstat object
 \description{
 Transform gstat object to linear model of coregionalization
 }
-

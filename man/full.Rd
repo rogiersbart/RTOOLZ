@@ -12,4 +12,3 @@ full(x)
 \description{
 Write number in full
 }
-

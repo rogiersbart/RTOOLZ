@@ -9,4 +9,3 @@
 \description{
 The function updates the version number by increasing the patch number by one. The date is set to the current date, and the SHA entry is set to the first 8 characters of the last commit hash. Changes are then ammended to the last commit. This function should be executed always after performing a commit (when not amended to previous one!!).
 }
-

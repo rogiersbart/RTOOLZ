@@ -19,4 +19,3 @@ list with with Bayesian data fusion results: prediction and variance (vectors, m
 \description{
 Bayesian data fusion
 }
-

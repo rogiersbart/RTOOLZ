@@ -16,4 +16,3 @@ ifelse0(test, yes, no)
 \description{
 \code{ifelse0} returns \code{yes} if \code{test} is \code{TRUE}. If \code{test} is \code{FALSE}, it returns \code{no}.
 }
-

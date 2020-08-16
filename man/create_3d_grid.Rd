@@ -19,4 +19,3 @@ data frame with xyz coordinates for each grid node
 \description{
 Create a regular rectangular 3d grid coordinates data frame
 }
-

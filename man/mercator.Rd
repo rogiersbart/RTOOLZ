@@ -9,4 +9,3 @@ mercator()
 \description{
 Used by Google Maps, Open Street Maps, Stamen Maps
 }
-

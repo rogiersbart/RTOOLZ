@@ -21,4 +21,3 @@ Data frame with x and y coordinates
 \description{
 Get n points evenly spread on a circle
 }
-

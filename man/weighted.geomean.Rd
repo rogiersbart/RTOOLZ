@@ -17,4 +17,3 @@ Calculate a weighted geometric mean
 \seealso{
 \code{\link{weighted.harmean}}, \code{\link{weighted.mean}}, \code{\link{geomean}}, \code{\link{harmean}} and \code{\link{mean}}
 }
-

@@ -24,4 +24,3 @@ data frame with converted coordinates
 \description{
 Convert data frame coordinates to another coordinate reference system
 }
-

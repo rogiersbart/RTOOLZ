@@ -17,4 +17,3 @@ data frame with additional long and lat columns
 \description{
 Add long lat coordinates to a data frame
 }
-

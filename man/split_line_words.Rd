@@ -15,4 +15,3 @@ Vector of words within the string, without comments at the end of the string.
 \description{
 Split a string in words.
 }
-

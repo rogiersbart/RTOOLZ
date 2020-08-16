@@ -4,8 +4,8 @@
 \alias{dws_weighted_exp_var}
 \title{Distance weighted statistics: weighted experimental variogram}
 \usage{
-dws_weighted_exp_var(exp_var_cloud, bandwidth, background, x, y, z, newX, newY,
-  newZ, verticalExaggeration, boundaries, t, point_weights = NULL)
+dws_weighted_exp_var(exp_var_cloud, bandwidth, background, x, y, z, newX,
+  newY, newZ, verticalExaggeration, boundaries, t, point_weights = NULL)
 }
 \value{
 weighted experimental variogram
@@ -16,4 +16,3 @@ Distance weighted statistics: weighted experimental variogram
 \references{
 Machuca-Mory, D. F., & Deutsch, C. V. (2012). Non-stationary Geostatistical Modeling Based on Distance Weighted Statistics and Distributions. Mathematical Geosciences, 45(1), 31–48. http://doi.org/10.1007/s11004-012-9428-z
 }
-

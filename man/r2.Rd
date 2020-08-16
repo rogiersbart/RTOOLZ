@@ -16,4 +16,3 @@ r2(x, y)
 \description{
 Coefficient of Determination
 }
-

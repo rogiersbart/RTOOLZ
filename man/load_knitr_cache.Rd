@@ -9,4 +9,3 @@ load_knitr_cache()
 \description{
 Load all knitr cache data
 }
-

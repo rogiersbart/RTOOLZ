@@ -9,4 +9,3 @@ sse(sim, obs, ...)
 \description{
 See \code{hydroGOF::\link[hydroGOF]{ssq}} for more information.
 }
-

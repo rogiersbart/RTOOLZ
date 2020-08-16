@@ -17,4 +17,3 @@ data frame with all shapefile attributes, and additional x and y columns
 \description{
 Convert a shapefile with point data to a table with the attributes plus the coordinates
 }
-

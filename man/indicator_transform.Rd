@@ -17,4 +17,3 @@ data frame with an indicator column for each factor level
 \description{
 Indicator transform
 }
-
